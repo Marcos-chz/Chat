@@ -1,0 +1,23 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Entornos virtuales
+venv/
+env/
+.env
+
+# Archivos de Django
+staticfiles/
+media/
+
+# Archivos de IDE
+.idea/
+.vscode/
+
+# Archivos de sistema
+.DS_Store

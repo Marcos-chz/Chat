@@ -1,0 +1,6 @@
+Django==4.2           # Framework Django
+channels==4.0.0       # Django Channels para manejar WebSockets
+channels-redis==4.1.0 # Backend de Redis para Django Channels
+redis==4.5.5          # Cliente de Redis para Python
+asgiref==3.7.2        # Compatibilidad ASGI
+daphne==4.0.0         # Servidor ASGI para Django Channels
