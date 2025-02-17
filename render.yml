@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: django-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: daphne -b 0.0.0.0 -p 10000 tu_proyecto.asgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: main.settings
+      - key: SECRET_KEY
+        value: django-insecure-f&7@nw6()5srtz0&6viq98p@*vw8_&3ecdp=x86o$*1ucepwyv
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "django-app.onrender.com"
