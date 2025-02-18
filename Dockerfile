@@ -14,5 +14,5 @@ COPY . .
 # Expone el puerto 8000
 EXPOSE 8000
 
-# Comando para ejecutar el servidor de Django
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Comando para ejecutar el servidor de Django con Gunicorn
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "main.wsgi:application"]
