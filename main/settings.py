@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-f&7@nw6()5srtz0&6viq98p@*vw8_&3ecdp=x86o$*1ucepwyv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['https://chat-0tfi.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
