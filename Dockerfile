@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # Comando para ejecutar el servidor de Django con Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "main.wsgi:application"]
+CMD ["daphne", "-b", "0.0.0.0", "-p", "8000", "main.asgi:application"]
