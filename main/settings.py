@@ -69,8 +69,12 @@ ASGI_APPLICATION = 'main.asgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'simuapi',  # El nombre de tu base de datos en Render
+        'USER': 'simuapi_user',  # El usuario de tu base de datos
+        'PASSWORD': 'Rpwi20rRDEFRpCfUZru0m2iAQZaq4mVV',  # La contraseña de tu base de datos
+        'HOST': 'dpg-cu83k0q3esus73aou0qg-a.oregon-postgres.render.com',  # El host de la base de datos en Render
+        'PORT': '5432',  # Puerto predeterminado de PostgreSQL
     }
 }
 
@@ -127,3 +131,6 @@ CHANNEL_LAYERS = {
 }
 
 CSRF_TRUSTED_ORIGINS = ["https://chat-0tfi.onrender.com"]
+
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
