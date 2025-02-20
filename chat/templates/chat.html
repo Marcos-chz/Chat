@@ -120,7 +120,7 @@
 
         // Websocket route
         const chatSocket = new WebSocket(
-            'ws://' + window.location.host + '/ws/chat/' + roomName + '/');
+            'wss://chat-0tfi.onrender.com/ws/chat/' + roomName + '/');
 
         // Obtain and send messages
         chatSocket.onmessage = function(e) {
